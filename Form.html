@@ -229,42 +229,38 @@
         <input type="date" name="checkin-start" value="2026-12-17" />
         ~
         <input type="date" name="checkin-end" value="2026-12-18" />
-
-        <!-- 在標題上方放一條分隔線 -->
-        <hr class="top-line" />
-        <!-- 區塊四：其他 -->
-        <fieldset>
-          <legend>其他 / Others</legend>
-
-          <label for="website">個人網站 / Website (選填)</label>
-          <input
-            type="url"
-            id="website"
-            name="website"
-            placeholder="https://"
-          />
-
-          <br />
-
-          <label for="note-text">備註 / Note</label>
-          <textarea
-            name="note"
-            rows="4"
-            cols="50"
-            placeholder="如有特殊需求請於此說明"
-          ></textarea>
-
-          <br />
-
-          <label for="upload-photo">上傳證件照 / Upload Photo</label>
-          <input type="file" id="upload-photo" name="upload-photo" />
-        </fieldset>
-
-        <!-- 送出與清除按鈕 -->
-        <br />
-        <button type="submit">送出報名</button>
-        <button type="reset">清除重填</button>
       </fieldset>
+
+      <!-- 在標題上方放一條分隔線 -->
+      <hr class="top-line" />
+      <!-- 區塊四：其他 -->
+      <fieldset>
+        <legend>其他 / Others</legend>
+
+        <label for="website">個人網站 / Website (選填)</label>
+        <input type="url" id="website" name="website" placeholder="https://" />
+
+        <br />
+
+        <label for="note-text">備註 / Note</label>
+        <textarea
+          id="note-text"
+          name="note"
+          rows="4"
+          cols="50"
+          placeholder="如有特殊需求請於此說明"
+        ></textarea>
+
+        <br />
+
+        <label for="upload-photo">上傳證件照 / Upload Photo</label>
+        <input type="file" id="upload-photo" name="upload-photo" />
+      </fieldset>
+
+      <!-- 送出與清除按鈕 -->
+      <br />
+      <button type="submit">送出報名</button>
+      <button type="reset">清除重填</button>
     </form>
   </body>
 </html>
