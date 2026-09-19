@@ -10,254 +10,260 @@
   <body>
     <h1>個人報名 Individual Registration</h1>
 
-    <fieldset>
-      <legend>基本資料 / Basic Information</legend>
+    <form action="">
+      <fieldset>
+        <legend>基本資料 / Basic Information</legend>
 
-      <!-- 姓名 -->
-      <label for="name">姓名 / Name</label>
-      <input type="text" id="name" required />
+        <!-- 姓名 -->
+        <label for="name">姓名 / Name</label>
+        <input type="text" id="name" required />
 
-      <br />
+        <br />
 
-      <!-- 性別 -->
-      <span>性別 / Gender</span>
-      <input type="radio" name="Gender" id="male" value="male" />
-      <label for="male">男 / male</label>
-      <input type="radio" name="Gender" id="female" value="female" />
-      <label for="female">女 / female</label>
+        <!-- 性別 -->
+        <span>性別 / Gender</span>
+        <input type="radio" name="Gender" id="male" value="male" />
+        <label for="male">男 / male</label>
+        <input type="radio" name="Gender" id="female" value="female" />
+        <label for="female">女 / female</label>
 
-      <br />
+        <br />
 
-      <!-- 國籍 -->
-      <span>國籍 / Nationality</span>
-      <input
-        type="radio"
-        name="Nationality"
-        id="ROC-Citizens"
-        value="ROC-Citizens"
-      />
-      <label for="ROC-Citizens">本國國籍 / ROC Citizens</label>
-      <input
-        type="radio"
-        name="Nationality"
-        id="Non-Citizens"
-        value="Non-Citizens"
-      />
-      <label for="Non-Citizens">外國國籍 / Non Citizens</label>
+        <!-- 國籍 -->
+        <span>國籍 / Nationality</span>
+        <input
+          type="radio"
+          name="Nationality"
+          id="ROC-Citizens"
+          value="ROC-Citizens"
+        />
+        <label for="ROC-Citizens">本國國籍 / ROC Citizens</label>
+        <input
+          type="radio"
+          name="Nationality"
+          id="Non-Citizens"
+          value="Non-Citizens"
+        />
+        <label for="Non-Citizens">外國國籍 / Non Citizens</label>
 
-      <br />
+        <br />
 
-      <!-- 身份證號 -->
-      <label for="ID-Number">身份證號 / ID Number</label>
-      <input
-        type="text"
-        id="ID-Number"
-        placeholder="身份證號或護照號碼"
-        required
-      />
+        <!-- 身份證號 -->
+        <label for="id-number">身份證號 / ID Number</label>
+        <input
+          type="text"
+          id="id-number"
+          placeholder="身份證號或護照號碼"
+          required
+        />
 
-      <br />
+        <br />
 
-      <span>出生日期 / Date Of Birth</span>
-      <select name="year" id="year">
-        <option value="">年 Year</option>
-        <option value="2026">2026</option>
-        <option value="2025">2025</option>
-        <option value="2024">2024</option>
-        <option value="2023">2023</option>
-        <option value="2022">2022</option>
-      </select>
-      <select name="month" id="month">
-        <option value="">月 Month</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-      <select name="day" id="day">
-        <option value="">日 Day</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
+        <span>出生日期 / Date Of Birth</span>
+        <select name="year" id="year">
+          <option value="">年 Year</option>
+          <option value="2026">2026</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+        </select>
+        <select name="month" id="month">
+          <option value="">月 Month</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <select name="day" id="day">
+          <option value="">日 Day</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
 
-      <br />
+        <br />
 
-      <!-- 電子信箱 -->
-      <label for="email">電子信箱 / Email</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        multiple
-        placeholder="example@mail.com"
-      />
+        <!-- 電子信箱 -->
+        <label for="email">電子信箱 / Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@mail.com"
+        />
 
-      <br />
+        <br />
 
-      <!-- 聯絡電話（拆開 id） -->
-      <span>聯絡電話 / Contact Number </span>
-      <label for="mobile">手機 / Mobile</label>
-      <input
-        type="tel"
-        name="mobile"
-        id="mobile"
-        placeholder="0922053012"
-        pattern="[0-9]{10}"
-      />
-      <label for="home-tel">住家 / Home</label>
-      <input
-        type="tel"
-        name="home-tel"
-        id="home-tel"
-        placeholder="0225855659"
-      />
+        <!-- 聯絡電話（拆開 id） -->
+        <span>聯絡電話 / Contact Number </span>
+        <label for="mobile">手機 / Mobile</label>
+        <input
+          type="tel"
+          name="mobile"
+          id="mobile"
+          placeholder="0922053012"
+          pattern="[0-9]{10}"
+        />
+        <label for="home-tel">住家 / Home</label>
+        <input
+          type="tel"
+          name="home-tel"
+          id="home-tel"
+          placeholder="0225855659"
+        />
 
-      <label for="office-tel">公司 / Office</label>
-      <input type="tel" name="office-tel" id="office-tel" placeholder="" />
+        <label for="office-tel">公司 / Office</label>
+        <input type="tel" name="office-tel" id="office-tel" placeholder="" />
 
-      <br />
+        <br />
 
-      <!-- 通訊地址 -->
-      <span>通訊地址 / Mailing Address</span>
-      <select name="address" id="Mailing-Address">
-        <option value="">請選擇縣市別 County/City</option>
-        <optgroup label="北部地區 (Northern Taiwan)">
-          <option value="基隆市Keelung City">基隆市Keelung City</option>
-          <option value="台北市Taipei City">台北市Taipei City</option>
-          <option value="新北市New Taipei City">新北市New Taipei City</option>
-          <option value="桃園市Taoyuan City">桃園市Taoyuan City</option>
-        </optgroup>
-        <optgroup label="中部地區 (Central Taiwan)">
-          <option value="苗栗縣Miaoli County">苗栗縣Miaoli County</option>
-          <option value="台中市Taichung City">台中市Taichung City</option>
-          <option value="彰化縣Changhua County">彰化縣Changhua County</option>
-          <option value="南投縣Nantou County">南投縣Nantou County</option>
-        </optgroup>
-      </select>
-      <select name="address-Township" id="address-Township">
-        <option value="">請選擇鄉鎮區別 Township</option>
-        <optgroup label="基隆市Keelung City">
-          <option value="中正區Zhongzheng District">
-            中正區Zhongzheng District
-          </option>
-          <option value="信義區Xinyi District">信義區Xinyi District</option>
-          <option value="仁愛區Ren'ai District">仁愛區Ren'ai District</option>
-          <option value="中山區Zhongshan District">
-            中山區Zhongshan District
-          </option>
-        </optgroup>
-      </select>
-      <input
-        type="text"
-        id="zipcode"
-        name="zipcode"
-        aria-label="郵遞區號"
-        placeholder="郵遞區號"
-        size="5"
-      />
-      <input
-        type="text"
-        id="address-detail"
-        name="address-detail"
-        size="44"
-        aria-label="詳細地址"
-        placeholder="例如：昌吉街55號2樓206室"
-      />
+        <!-- 通訊地址 -->
+        <span>通訊地址 / Mailing Address</span>
+        <select name="address" id="mailing-address">
+          <option value="">請選擇縣市別 County/City</option>
+          <optgroup label="北部地區 (Northern Taiwan)">
+            <option value="基隆市Keelung City">基隆市Keelung City</option>
+            <option value="台北市Taipei City">台北市Taipei City</option>
+            <option value="新北市New Taipei City">新北市New Taipei City</option>
+            <option value="桃園市Taoyuan City">桃園市Taoyuan City</option>
+          </optgroup>
+          <optgroup label="中部地區 (Central Taiwan)">
+            <option value="苗栗縣Miaoli County">苗栗縣Miaoli County</option>
+            <option value="台中市Taichung City">台中市Taichung City</option>
+            <option value="彰化縣Changhua County">彰化縣Changhua County</option>
+            <option value="南投縣Nantou County">南投縣Nantou County</option>
+          </optgroup>
+        </select>
+        <select name="address-Township" id="address-Township">
+          <option value="">請選擇鄉鎮區別 Township</option>
+          <optgroup label="基隆市Keelung City">
+            <option value="中正區Zhongzheng District">
+              中正區Zhongzheng District
+            </option>
+            <option value="信義區Xinyi District">信義區Xinyi District</option>
+            <option value="仁愛區Ren'ai District">仁愛區Ren'ai District</option>
+            <option value="中山區Zhongshan District">
+              中山區Zhongshan District
+            </option>
+          </optgroup>
+        </select>
+        <input
+          type="text"
+          id="zipcode"
+          name="zipcode"
+          aria-label="郵遞區號"
+          placeholder="郵遞區號"
+          size="5"
+        />
+        <input
+          type="text"
+          id="address-detail"
+          name="address-detail"
+          size="44"
+          aria-label="詳細地址"
+          placeholder="例如：昌吉街55號2樓206室"
+        />
 
-      <br />
+        <br />
 
-      <!-- 緊急聯絡人 -->
-      <label for="EC-Name">緊急聯絡人姓名 / Name of Emergency Contact</label>
-      <input type="name" name="EC-Name" id="EC-Name" />
-      <label for="Relationship">關係 / Relationship</label>
-      <input type="name" name="Relationship" id="Relationship" />
-      <label for="Phone">電話 / Phone</label>
-      <input type="tel" name="Phone" id="Phone" />
-    </fieldset>
-
-    <!-- 在標題上方放一條分隔線 -->
-    <hr class="top-line" />
-    <!-- 區塊二：競賽項目資料 -->
-    <fieldset>
-      <legend>競賽項目資料 / Race Category Information</legend>
-
-      <input type="checkbox" id="9km" name="race" value="9km" />
-      <label for="9km">9KM (NTD 800)</label>
-      <select name="shirt-size-9km">
-        <option value="">請選擇衣服尺寸</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-      </select>
-
-      <br />
-
-      <input type="checkbox" id="3km" name="race" value="3km" />
-      <label for="3km">3KM (NTD 650)</label>
-      <select name="shirt-size-3km">
-        <option value="">請選擇衣服尺寸</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-      </select>
-    </fieldset>
-
-    <!-- 在標題上方放一條分隔線 -->
-    <hr class="top-line" />
-    <!-- 區塊三：報到方式 -->
-    <fieldset>
-      <legend>報到方式(二擇一) / Check-in Method</legend>
-
-      <span>郵寄代理報到 / Postal delivery check-in</span>
-      <input type="radio" name="checkin" id="postal-yes" value="Y" />
-      <label for="postal-yes">是 / Y (需額外付費，限台灣本島)</label>
-      <input type="radio" name="checkin" id="postal-no" value="N" checked />
-      <label for="postal-no">否 / N</label>
-
-      <br />
-
-      <input type="radio" name="checkin-location" id="location1" checked />
-      <!-- checked 屬性只是「預設勾選」 -->
-      <label for="location1"
-        >地點：花博爭艷館 (臺北市中山區玉門街1號) 時間：</label
-      >
-      <input type="date" value="2026-12-17" />
-      ~
-      <input type="date" value="2026-12-18" />
+        <!-- 緊急聯絡人 -->
+        <label for="EC-Name">緊急聯絡人姓名 / Name of Emergency Contact</label>
+        <input type="text" name="EC-Name" id="EC-Name" />
+        <label for="Relationship">關係 / Relationship</label>
+        <input type="text" name="Relationship" id="Relationship" />
+        <label for="Phone">電話 / Phone</label>
+        <input type="tel" name="Phone" id="Phone" />
+      </fieldset>
 
       <!-- 在標題上方放一條分隔線 -->
       <hr class="top-line" />
-      <!-- 區塊四：其他 -->
+      <!-- 區塊二：競賽項目資料 -->
       <fieldset>
-        <legend>其他 / Others</legend>
+        <legend>競賽項目資料 / Race Category Information</legend>
 
-        <label for="website">個人網站 / Website (選填)</label>
-        <input type="url" id="website" name="website" placeholder="https://" />
-
-        <br />
-
-        <label for="note-text">備註 / Note</label>
-        <textarea
-          name="note"
-          rows="4"
-          cols="50"
-          placeholder="如有特殊需求請於此說明"
-        ></textarea>
+        <input type="checkbox" id="9km" name="race" value="9km" />
+        <label for="9km">9KM (NTD 800)</label>
+        <select name="shirt-size-9km">
+          <option value="">請選擇衣服尺寸</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+        </select>
 
         <br />
 
-        <label for="upload-photo">上傳證件照 / Upload Photo</label>
-        <input type="file" id="upload-photo" name="upload-photo" />
+        <input type="checkbox" id="3km" name="race" value="3km" />
+        <label for="3km">3KM (NTD 650)</label>
+        <select name="shirt-size-3km">
+          <option value="">請選擇衣服尺寸</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+        </select>
       </fieldset>
 
-      <!-- 送出與清除按鈕 -->
-      <br />
-      <button type="submit">送出報名</button>
-      <button type="reset">清除重填</button>
-    </fieldset>
+      <!-- 在標題上方放一條分隔線 -->
+      <hr class="top-line" />
+      <!-- 區塊三：報到方式 -->
+      <fieldset>
+        <legend>報到方式(二擇一) / Check-in Method</legend>
+
+        <span>郵寄代理報到 / Postal delivery check-in</span>
+        <input type="radio" name="checkin" id="postal-yes" value="Y" />
+        <label for="postal-yes">是 / Y (需額外付費，限台灣本島)</label>
+        <input type="radio" name="checkin" id="postal-no" value="N" checked />
+        <label for="postal-no">否 / N</label>
+
+        <br />
+
+        <input type="radio" name="checkin-location" id="location1" checked />
+        <!-- checked 屬性只是「預設勾選」 -->
+        <label for="location1"
+          >地點：花博爭艷館 (臺北市中山區玉門街1號) 時間：</label
+        >
+        <input type="date" name="checkin-start" value="2026-12-17" />
+        ~
+        <input type="date" name="checkin-start" value="2026-12-18" />
+
+        <!-- 在標題上方放一條分隔線 -->
+        <hr class="top-line" />
+        <!-- 區塊四：其他 -->
+        <fieldset>
+          <legend>其他 / Others</legend>
+
+          <label for="website">個人網站 / Website (選填)</label>
+          <input
+            type="url"
+            id="website"
+            name="website"
+            placeholder="https://"
+          />
+
+          <br />
+
+          <label for="note-text">備註 / Note</label>
+          <textarea
+            name="note"
+            rows="4"
+            cols="50"
+            placeholder="如有特殊需求請於此說明"
+          ></textarea>
+
+          <br />
+
+          <label for="upload-photo">上傳證件照 / Upload Photo</label>
+          <input type="file" id="upload-photo" name="upload-photo" />
+        </fieldset>
+
+        <!-- 送出與清除按鈕 -->
+        <br />
+        <button type="submit">送出報名</button>
+        <button type="reset">清除重填</button>
+      </fieldset>
+    </form>
   </body>
 </html>
